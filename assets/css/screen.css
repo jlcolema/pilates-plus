@@ -1,0 +1,449 @@
+@import url("reset.css");
+
+body {
+	color: #000;
+	background: #fff url(../media/background.png) top center no-repeat;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	}
+
+a {
+	color: #000;
+	text-decoration: none;
+	}
+
+#header {
+	position: relative;
+	width: 700px;
+	height: 150px;
+	margin: 0 auto;
+	text-align: center;
+	}
+
+	h1 {
+		position: absolute;
+		top: 10px;
+		left: -12px;
+		text-indent: -9999px;
+		z-index: 100;
+		}
+
+		h1 a {
+			display: block;
+			width: 220px;
+			height: 100px;
+			background: url(../media/logo.png) top left no-repeat;
+			}
+
+		h1 a:hover {}
+
+	#navigation {
+		position: absolute;
+		bottom: 0;
+		left: 100px;
+		font-size: 18px;
+		text-align: center;
+		}
+
+		#navigation li {
+			float: left;
+			display: inline;
+			background: url(../media/divider.png) right -4px no-repeat;
+			}
+
+		li#services {}
+
+		li#contact { background: none; }
+
+			#navigation li a {
+				display: block;
+				width: 115px;
+				height: 20px;
+				margin: 0 5px 2px 5px;
+				padding: 5px 0 6px 0;
+				-webkit-border-top-left-radius: 3px;
+				-webkit-border-top-right-radius: 3px;
+				-moz-border-radius-topleft: 3px;
+				-moz-border-radius-topright: 3px;
+				}
+
+			#navigation li a:hover {
+				background: rgba(255, 255, 255, .25);
+				}
+
+			#home-page #home a,
+			#services-page #services a,
+			#form-page #services a,
+			#about-page #about a,
+			#contact-page #contact a {
+				height: 19px;
+				background: rgba(130, 165, 61, .50);
+				}
+
+			#services-page #services a,
+			#about-page #about a,
+			#contact-page #contact a {}
+
+			#navigation li a:active {
+				background: rgba(255, 255, 255, .45);
+				}
+
+	p#login {
+		position: absolute;
+		top: 10px;
+		right: 0;
+		color: #fff;
+		text-align: right;
+		font-family: Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
+		font-size: 10px;
+		}
+
+		p#login em {
+			text-transform: none;
+			font-family: Georgia, Times, 'Times New Roman', serif;
+			}
+
+		p#login a {
+			color: #82a53c;
+			}
+
+		p#login a:hover {
+			color: #c4d82e;
+			}
+
+		p#return a {
+			background: none;
+			}
+
+	form label, form input {
+		width: 300px;
+		display: block;
+		font-size: 14px;
+		line-height: 19px;
+		}
+
+		textarea {
+			width: 304px;
+			}
+
+		form input {
+			margin: 0 0 19px 0;
+			}
+
+		form #submit {
+			display: block;
+			width: 80px;
+			height: 30px;
+			margin: 19px 0 0 0;
+			}
+
+/* Body */
+
+#body {
+	width: 700px;
+	height: auto;
+	margin: 0 auto;
+	overflow: auto;
+	}
+
+	#banner {
+		width: 400px;
+		margin: 0 0 1px 0;
+		padding: 30px 150px 30px 150px;
+		color: #000;
+		border-bottom: 1px solid #82a53c;
+		text-align: center;
+		font-size: 30px;
+		line-height: 37px;
+		}
+
+	#home-page #banner {
+		position: relative;
+		width: 700px;
+		height: 397px;
+		margin: 0;
+		padding: 0 0 0 0;
+		background: url(../media/allegro-female.jpg) no-repeat;
+		}
+
+		#home-page #banner p {
+			position: absolute;
+			top: 40px;
+			left: 40px;
+			text-align: left;
+			width: 400px;
+			}
+
+			#home-page #banner p#author {
+				position: absolute;
+				top: 115px;
+				left: 243px;
+				font-size: 10px;
+				text-transform: uppercase;
+				font-family: Helvetica, Arial, serif;
+				color: #999;
+				}
+
+	.column {
+		float: left;
+		display: inline;
+		border-top: 1px solid #bfbfbf;
+		}
+
+	/* Left */
+
+	#left {
+		width: 325px;
+		padding: 25px 24px 50px 75px;
+		border-right: 1px solid #bfbfbf;
+		}
+
+	#services-page #left {
+		width: 300px;
+		padding: 25px 24px 50px 100px;
+		}
+
+	#home-page #left {
+		width: 210px;
+		margin: 25px 0 0 0;
+		padding: 0 0 25px 40px;
+		border-right: 1px solid #bfbfbf;
+		border-top: none;
+		}
+
+	#home-page #middle {
+		width: 225px;
+		margin: 25px 0 0 0;
+		padding: 0 0 25px 25px;
+		border-top: none;
+		}
+
+	#home-page #right {
+		width: 119px;
+		margin: 25px 0 0 0;
+		padding: 0 0 25px 0;
+		border-top: none;
+		}
+
+		#left a {
+			border-bottom: 1px solid #999;
+			}
+
+			#left a:hover {
+				border-bottom: 1px solid #000;
+				}
+
+		#left dt a,
+		#left dt a:hover {
+			border: none;
+			}
+
+		h2 {
+			font-size: 19px;
+			line-height: 24px;
+			padding: 0 0 7px 0;
+			}
+
+		#left p {
+			font-size: 14px;
+			line-height: 19px;
+			padding: 0 0 7px 0;
+			}
+
+		#left dl {
+			font-size: 14px;
+			line-height: 19px;
+			}
+
+			#left dt, #left h2 {
+				color: #82a53c;
+				padding: 0 0 7px 0;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 12px;
+				}
+
+			#left h2 em {
+				text-transform: none;
+				}
+
+			#left dd {
+				padding: 0 0 19px 0;
+				}
+
+			#left dl em {
+				text-transform: none;
+				}
+
+		ul.service {
+			clear: both;
+			height: 19px;
+			font-size: 14px;
+			line-height: 19px;
+			padding: 0 0 7px 0;
+			background: url(../media/leader-dots.png) 0 12px repeat-x;
+			}
+
+			ul.service li {
+				display: inline;
+				background: #fff;
+				}
+
+				ul.service li.type {
+					float: left;
+					display: inline;
+					padding: 0 3px 0 0;
+					overflow: hidden;
+					}
+
+				ul.service li.price {
+					float: right;
+					text-align: right;
+					overflow: hidden;
+					}
+
+		#left p.note, #left ul.note {
+			width: 300px;
+			font-size: 11px;
+			line-height: 14px;
+			margin: 15px 0 0 0;
+			font-style: italic;
+			color: #999;
+			}
+
+			#left ul.note li {
+				padding: 0 0 3px 0;
+				}
+
+	/* Right */
+
+	#right {
+		width: 225px;
+		padding: 25px 25px 50px 25px;
+		}
+
+	* html #right {
+		padding: 25px 23px 50px 25px;
+		}
+
+		#right h3,
+		#home-page .column h3 {
+			color: #82a63c;
+			font-size: 14px;
+			line-height: 17px;
+			text-transform: uppercase;
+			padding: 0 0 10px 0;
+			font-family: Helvetica, Arial, sans-serif;
+			}
+
+			h3 em {
+				display: block;
+				text-transform: none;
+				font-family: Georgia, Times, 'Times New Roman', serif;
+				}
+
+		#right ul,
+		#home-page .column ul {
+			font-size: 12px;
+			line-height: 15px;
+			color: #555;
+			font-family: Helvetica, Arial, sans-serif;
+			margin: 0 0 20px 0;
+			padding: 0 0 20px 0;
+			border-bottom: 1px solid #bfbfbf;
+			}
+
+		#home-page .column ul {
+			border-bottom: none;
+			margin: 0;
+			padding: 0;
+			}
+
+			#right ul li,
+			#home-page .column ul li {
+				padding: 0 0 7px 0;
+				}
+
+			#eco-friendly {
+				padding:  0 0 20px 0;
+				border-bottom: 1px solid #bfbfbf;
+				text-align: center;
+				}
+
+				#eco-friendly h4 {
+					font-size: 24px;
+					font-weight: 100;
+					color: #b7cf7e;
+					font-family: Helvetica, Arial, sans-serif;
+					text-transform: uppercase;
+					}
+
+				#eco-friendly h4 strong {
+					color: #8ca15a;
+					font-weight: 700;
+					}
+
+				#eco-friendly p {
+					margin: 0 15px 0 15px;
+					color: #8ca15a;
+					font-size: 12px;
+					line-height: 15px;
+					}
+
+				.certification {
+					margin-top: 10px;
+					}
+
+			img#promotion {
+				width: 165px;
+				height: 125px;
+				background: #eee;
+				}
+
+			dl {
+				position: relative;
+				}
+
+			dl dt img {
+				position: absolute;
+				top: 5px;
+				left: -80px;
+				z-index: 1000;
+				}
+
+			#services-page #left h2 {
+				width: 214px;
+				height: 37px;
+				text-indent: -9999px;
+				background: url(../media/plus-packages.png) no-repeat;
+				margin: 0 0 15px 0;
+				}
+
+			#map {
+				width: 225px;
+				height: 225px;
+				margin: 0 0 25px 0;
+				}
+
+			.gmnoprint a {
+				display: none;
+				}
+
+
+/* Footer */
+
+#footer {
+	width: 685px;
+	height: auto;
+	margin: 0 auto;
+	padding: 25px 0 50px 15px;
+	overflow: auto;
+	border-top: 1px solid #bfbfbf;
+	font-size: 12px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: center;
+	}
+
+	#footer li {
+		display: inline;
+		}
